@@ -52,6 +52,12 @@ class MusicLibraryController
     puts "Please enter the name of an artist:"
     artist = gets.strip
     sorted_songs = artist.songs.sort
+    counter = 1
+    sorted_songs.each do |song|
+      "#{counter}. #{song.name} - #{song.genre}"
+      counter += 1
+    end
+
   end
 
 end
