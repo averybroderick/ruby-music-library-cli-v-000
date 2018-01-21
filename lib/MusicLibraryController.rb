@@ -82,7 +82,7 @@ class MusicLibraryController
       song_number = gets.strip
       song_list = self.list_songs.split("\n")
       found_song = song_list.detect{|song| song[0] == song_number}
-      Song.all.detect{|song| song.name = found_song}
+      found_song.split(" - ") 
     end
 
 end
