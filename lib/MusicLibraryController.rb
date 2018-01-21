@@ -32,6 +32,8 @@ class MusicLibraryController
       self.list_genre
     when 'play song'
       self.play_song
+    else 
+      puts "Please try again"
     end
   end
 
