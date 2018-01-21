@@ -68,7 +68,7 @@ class MusicLibraryController
       genre_name = gets.strip
       genre = Genre.all.detect{|artist| genre.name == genre_name}
       if genre
-        sorted_songs = artist.songs.sort_by{|song| song.name}
+        sorted_genres = genre.songs.sort_by{|song| song.name}
         counter = 1
         sorted_songs.each do |song|
           puts "#{counter}. #{song.name} - #{song.genre.name}"
