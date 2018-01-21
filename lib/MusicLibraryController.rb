@@ -22,8 +22,8 @@ class MusicLibraryController
 
   def list_songs
     counter = 1
-    Song.all.each do |song|
-      puts "#{counter}. #{song}"
+    MusicImporter.files.each do |file|
+      puts "#{counter}. #{file}"
       counter += 1
     end
   end
