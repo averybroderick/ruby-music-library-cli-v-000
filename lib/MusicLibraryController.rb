@@ -23,9 +23,8 @@ class MusicLibraryController
 
   def list_songs
     counter = 1
-    sorted = self.library.files.sort
-    sorted.each do |file|
-      puts "#{counter}. #{file[0...-4]}"
+    Song.all.sort_by {|song| song.name}
+      puts "#{counter}. #{song[0...-4]}"
       counter += 1
     end
   end
