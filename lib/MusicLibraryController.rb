@@ -23,22 +23,16 @@ class MusicLibraryController
       case answer
       when "list songs"
         self.list_songs
-        answer = gets.strip
       when "list artists"
         self.list_artists
-        answer = gets.strip
       when "list genres"
         self.list_genres
-        answer = gets.strip
       when "list artist"
         self.list_songs_by_artist
-        answer = gets.strip
       when "list genre"
         self.list_songs_by_genre
-        answer = gets.strip
       when "play song"
         self.play_song
-        answer = gets.strip
       end
     end
   end
