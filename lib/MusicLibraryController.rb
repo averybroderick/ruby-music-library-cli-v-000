@@ -33,8 +33,6 @@ class MusicLibraryController
     when 'play song'
       self.play_song
     end
-    # answer.split(" ").join("_")
-    # self.methods.each{|method| method.to_s == answer ? self.method : nil}
   end
 
   def list_songs
