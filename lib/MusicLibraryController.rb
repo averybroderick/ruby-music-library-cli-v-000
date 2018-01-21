@@ -57,7 +57,6 @@ class MusicLibraryController
       "#{counter}. #{song.name} - #{song.genre}"
       counter += 1
     end
-
   end
 
 end
