@@ -70,7 +70,7 @@ class MusicLibraryController
       if genre
         sorted_genres = genre.songs.sort_by{|song| song.name}
         counter = 1
-        sorted_songs.each do |song|
+        sorted_genres.each do |song|
           puts "#{counter}. #{song.name} - #{song.genre.name}"
           counter += 1
         end
