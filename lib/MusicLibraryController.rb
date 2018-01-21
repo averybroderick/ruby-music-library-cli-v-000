@@ -22,15 +22,15 @@ class MusicLibraryController
     case answer
     when "list songs"
       self.list_songs
-    when 'list artists'
+    when "list artists"
       self.list_artists
-    when 'list genres'
+    when "list genres"
       self.list_genres
-    when 'list artist'
+    when "list artist"
       self.list_artist
-    when 'list genre'
+    when "list genre"
       self.list_genre
-    when 'play song'
+    when "play song"
       self.play_song
     end
   end
