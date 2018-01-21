@@ -81,7 +81,7 @@ class MusicLibraryController
       puts "Which song number would you like to play?"
       song_number = gets.strip
       song_list = self.list_songs.split("/n")
-      songlist.detect{|song| song[0] == song_number}
+      song_list.detect{|song| song[0] == song_number}
     end
 
 end
