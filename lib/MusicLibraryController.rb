@@ -19,8 +19,22 @@ class MusicLibraryController
     puts "To quit, type 'exit'."
     puts "What would you like to do?"
     answer = gets.strip until answer == 'exit'
-    answer.split(" ").join("_")
-    self.methods.each{|method| method.to_s == answer ? self.method : nil}
+    case answer
+    when 'list songs'
+      self.list_songs
+    when 'list artists'
+      self.list_artists
+    when 'list genres'
+      self.list_genres
+    when 'list artist'
+      self.list_artist
+    when 'list genre'
+      self.list_genre
+    when 'play song'
+      self.play_song
+    end
+    # answer.split(" ").join("_")
+    # self.methods.each{|method| method.to_s == answer ? self.method : nil}
   end
 
   def list_songs
