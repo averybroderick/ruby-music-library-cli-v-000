@@ -4,7 +4,8 @@ class MusicLibraryController
 
   def initialize(path="./db/mp3s")
     @path = path
-    @library = MusicImporter.new(self.path).import
+    @library = MusicImporter.new(self.path)
+    self.library.import
   end
 
   def call
