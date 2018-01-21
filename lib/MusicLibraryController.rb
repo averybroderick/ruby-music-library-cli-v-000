@@ -20,4 +20,7 @@ class MusicLibraryController
     answer = gets.strip until answer == 'exit'
   end
 
+  def list_songs
+  end
+
 end
