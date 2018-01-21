@@ -51,7 +51,7 @@ class MusicLibraryController
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
     artist = gets.strip
-    artist.songs.sort
+    sorted_songs = artist.songs.sort
   end
 
 end
