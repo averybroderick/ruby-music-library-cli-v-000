@@ -20,7 +20,7 @@ class MusicLibraryController
     puts "What would you like to do?"
     answer = gets.strip until answer == 'exit'
     case answer
-    when 'list songs'
+    when "list songs"
       self.list_songs
     when 'list artists'
       self.list_artists
