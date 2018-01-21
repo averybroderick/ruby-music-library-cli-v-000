@@ -80,10 +80,10 @@ class MusicLibraryController
     def play_song
       puts "Which song number would you like to play?"
       song_number = gets.strip
-      song_list = self.list_songs.split("\n")
+      song_list = self.list_songs
       found_song = song_list.detect{|song| song[0] == song_number}
       found_song.split(" - ")
-      puts "Playing #{found_song[1]} by #{found_song[0]}" 
+      puts "Playing #{found_song[1]} by #{found_song[0]}"
     end
 
 end
