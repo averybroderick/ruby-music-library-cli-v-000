@@ -34,6 +34,7 @@ class MusicLibraryController
       when "play song"
         self.play_song
       end
+      answer = gets.strip
     end
   end
 
