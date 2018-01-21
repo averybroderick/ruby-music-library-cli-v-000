@@ -20,7 +20,7 @@ class MusicLibraryController
     puts "What would you like to do?"
     answer = gets.strip until answer == 'exit'
     answer.split(" ").join("_")
-    self.instance_methods.each{|method| method.to_s == answer ? self.method : nil}
+    self.methods.each{|method| method.to_s == answer ? self.method : nil}
   end
 
   def list_songs
