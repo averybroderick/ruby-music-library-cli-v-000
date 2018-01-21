@@ -65,8 +65,8 @@ class MusicLibraryController
 
     def list_songs_by_genre
       puts "Please enter the name of a genre:"
-      artist_name = gets.strip
-      artist = Artist.all.detect{|artist| artist.name == artist_name}
+      genre_name = gets.strip
+      genre = Genre.all.detect{|artist| artist.name == artist_name}
       if artist
         sorted_songs = artist.songs.sort_by{|song| song.name}
         counter = 1
